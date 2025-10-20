@@ -1,9 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-html {
+/* RESET CSS CƠ BẢN */
+html, body {
   margin: 0;
   padding: 0;
-  min-height:100vh;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
 }
+
+/* Áp dụng box-sizing kế thừa cho tất cả phần tử */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Xóa style mặc định của heading, paragraph */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Xóa list style mặc định */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Xóa gạch chân của link */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset cho ảnh */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
